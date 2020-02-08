@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project | Digital Book Collection</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <div class="app">
+
+    <header class="header">
+      <h1 class="title">book collection</h1>
+    </header>
+
+    <aside class="aside">
+      <h2 class="subtitle">book panel</h2>
+      
+      <form class="form-panel" id="form-panel">
+
+        <div class="form-element">
+          <label for="name-book" class="form-tag">Name of book
+            <input type="text" class="input form-input name-book" id="name-book" name="nameBook" required placeholder="name of book">
+          </label>
+        </div>
+        
+        <div class="form-element">
+          <label for="page-book" class="form-tag">Number of pages
+            <input type="number" class="input form-input page-book" id="page-book" name="pageBook" required placeholder="number page">
+          </label>
+        </div>
+
+        <div class="form-element">
+          <label for="year-book" class="form-tag">Year of publication
+            <input type="number" class="input form-input year-book" id="year-book" name="yearBook" required placeholder="year of publication">
+          </label>
+        </div>
+
+        <div class="form-element">
+          <label for="cover-page" class="form-tag">Cover page
+            <input type="text" class="input form-input cover-page" id="cover-page" name="coverPage" required placeholder="cover page">
+          </label>
+        </div>
+
+        <div class="form-element">
+          <label for="name-author" class="form-tag">Author's name
+            <input type="text" class="input form-input name-author" id="name-author" name="nameAuthor" required placeholder="name of book">
+          </label>
+        </div>
+
+        <div class="form-element">
+          <input type="submit" class="btn-add-book" id="btn-add-book" value="add to collection">
+        </div>
+
+      </form>
+    </aside>
+
+    <main class="main">
+      
+      <section id="section-books">
+      </section>
+
+    </main>
+
+  </div>
+  
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
